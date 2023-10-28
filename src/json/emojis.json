@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "imagePath": "images/emoji_1.svg",
+        "height": "194px",
+        "width": "150px",
+        "text":"Practical Achiever"
+    },
+    {
+        "id": 2,
+        "imagePath": "images/emoji_2.svg",
+        "height": "194px",
+        "width": "193px",
+        "text":"Cautiously Optimistic"
+
+    },
+    {
+        "id": 3,
+        "imagePath": "images/emoji_3.png",
+        "height": "194px",
+        "width": "187px",
+        "text":"The Wanna-be Stabilizer"
+
+    },
+    {
+        "id": 4,
+        "imagePath": "images/emoji_4.svg",
+        "height": "194px",
+        "width": "187px",
+        "text":"The Sleeping Beauty"
+
+    },
+    {
+        "id": 5,
+        "imagePath": "images/emoji_5.svg",
+        "height": "194px",
+        "width": "187px",
+        "text":"The Chaotic Overspender"
+    }
+]
