@@ -5,12 +5,24 @@ import { HeroSection } from '../components/HeroSection'
 import * as Images from '../images/index'
 import Emojis from "../json/emojis.json";
 import Emoji from '../components/Emoji'
+import { useNavigate } from 'react-router-dom'
 const LandingPage = () => {
+    const navigate = useNavigate()
+    const handelJoinNowClick = ()=>{
+        navigate('/join-now')
+    }
     return (
         <Grid >
-            <Header></Header>
+            <Grid container bgcolor={'#fff'} sx={{
+                position: 'fixed',
+                top: 0,
+                zIndex: 1,
+            }}>
+                <Header></Header>
+
+            </Grid>
             <HeroSection>
-                <Grid container maxWidth={'1162px'} alignSelf={'center'} direction={{ xs: 'column-reverse' }}>
+                <Grid container maxWidth={'1162px'} alignSelf={'center'} direction={{ xs: 'column-reverse', lg: 'row' }}>
                     <Grid item container xs={10} lg={6} paddingX={{ xs: 2, lg: 0 }}>
                         <Typography variant='h2'>
                             They say, when life gives you lemons, make lemonade!
@@ -26,8 +38,11 @@ const LandingPage = () => {
                         <Button variant='contained' sx={{
                             background: 'linear-gradient(90deg, #E75553 0%, #ED8663 107.32%)',
                             paddingY: '15px',
+                            paddingX: '40px',
                             borderRadius: '8.655px'
-                        }}>
+                        }}
+                        onClick={handelJoinNowClick}
+                        >
                             <Typography variant='button'>
                                 Join now <img src={Images.arrow} alt="" />
                             </Typography>
@@ -35,14 +50,14 @@ const LandingPage = () => {
                     </Grid>
                     <Grid item xs={0} lg={6} container justifyContent={'end'}>
                         <Box maxHeight={'557px'} maxWidth={'475px'}>
-                            <img src={Images.heroImage}  height={'100%'} width={'100%'} style={{aspectRatio:'6/5'}}></img>
+                            <img src={Images.heroImage} height={'100%'} width={'100%'} style={{ aspectRatio: '6/5' }}></img>
                         </Box>
 
                     </Grid>
                 </Grid>
                 <Grid container marginTop={10} direction={'column'} rowGap={8} paddingBottom={10}>
                     <Grid item container>
-                        <Grid item xs={12} lg={6} margin={'auto'}>
+                        <Grid item maxWidth={'683px'} margin={'auto'}>
 
                             <Typography variant='h3'>
                                 Take the test & know which of the

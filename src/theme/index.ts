@@ -3,6 +3,13 @@ import { createTheme } from "@mui/material";
 export const theme = createTheme({
     typography: {
         fontFamily: 'Urbanist sans-serif',
+        h1:{
+            fontFamily: 'Urbanist',
+            fontSize: '40px',
+            fontWeight: 700,
+            lineHeight: '140%',
+            textTransform:'capitalize'
+        },
         h2: {
             fontFamily: 'Urbanist',
             fontSize: '38px',
@@ -28,11 +35,31 @@ export const theme = createTheme({
             fontWeight: 700,
             lineHeight: '140%'
         },
+        body2:{
+            fontFamily: 'Urbanist',
+            fontSize: '30px',
+            fontWeight: 600,
+            lineHeight: 'normal'
+        },
+        body1:{
+            fontFamily: 'Urbanist',
+            fontSize: '16px',
+            fontWeight: 400,
+            lineHeight: 'normal'
+        }
+        ,
         subtitle1:{
             fontFamily: 'Epilogue sans-serif',
             fontSize: '20px',
             fontWeight: 500,
             lineHeight: '140%',
+            color:'#000'
+        },
+        subtitle2:{
+            fontFamily: 'Urbanist',
+            fontSize: '18px',
+            fontWeight: 700,
+            lineHeight: '150%',
             color:'#000'
         },
          button:{
@@ -45,5 +72,6 @@ export const theme = createTheme({
             
 
          }
-    }
+    },
+   
 })

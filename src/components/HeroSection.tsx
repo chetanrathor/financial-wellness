@@ -14,8 +14,9 @@ export const HeroSection = ({ children }: PropType) => {
             // height: '100vh',
             // maxWidth:'1162px',
             // marginX:'139px'
-            paddingTop:{xs:2,lg:0},
-            width:'100%'
+            paddingTop:10,
+            width:'100%',
+            marginTop:10
         }}>
             {children}
         </Grid>
